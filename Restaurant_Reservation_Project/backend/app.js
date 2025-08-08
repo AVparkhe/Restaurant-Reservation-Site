@@ -10,7 +10,7 @@ dotenv.config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: "https://restaurant-reservation-59tr.onrender.com",
+    origin: [process.env.FRONTEND_URL],
     methods: ["POST"],
     credentials: true,
   })
@@ -29,5 +29,6 @@ dbConnection();
 app.use(errorMiddleware);
 
 export default app;
+
 
 
