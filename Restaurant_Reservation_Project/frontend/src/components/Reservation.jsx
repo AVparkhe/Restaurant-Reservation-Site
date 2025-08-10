@@ -30,7 +30,7 @@ const Reservation = () => {
       toast.success(data.message);
       setFirstName("");
       setLastName("");
-      setPhone(0);
+      setPhone("");
       setEmail("");
       setTime("");
       setDate("");
@@ -109,6 +109,7 @@ const Reservation = () => {
 };
 
 export default Reservation;
+
 
 
 
