@@ -18,7 +18,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        '${process.env.BACKEND_URL}/api/v1/reservation/send',
+        '${process.env.REACT_APP_BACKEND_URL}/api/v1/reservation/send',
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
@@ -109,6 +109,7 @@ const Reservation = () => {
 };
 
 export default Reservation;
+
 
 
 
