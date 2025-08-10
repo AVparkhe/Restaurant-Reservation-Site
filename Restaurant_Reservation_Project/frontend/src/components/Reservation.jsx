@@ -88,7 +88,7 @@ const Reservation = () => {
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 <input
-                  type="number"
+                  type="text"
                   placeholder="Phone"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
@@ -109,6 +109,7 @@ const Reservation = () => {
 };
 
 export default Reservation;
+
 
 
 
